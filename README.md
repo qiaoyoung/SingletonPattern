@@ -190,9 +190,9 @@ ARCSingleton *singleton1 = [ARCSingleton sharedInstance];
 NSLog(@"singleton1对象的内存地址为:%p",singleton1);
 ARCSingleton *singleton2 = [[ARCSingleton alloc] init];
 NSLog(@"singleton2对象的内存地址为:%p",singleton2);
-ARCSingleton *singleton3 = [ARCSingleton copy];
+ARCSingleton *singleton3 = [singleton2 copy];
 NSLog(@"singleton3对象的内存地址为:%p",singleton3);
-ARCSingleton *singleton4 = [ARCSingleton mutableCopy];
+ARCSingleton *singleton4 = [singleton2 mutableCopy];
 NSLog(@"singleton4对象的内存地址为:%p",singleton4);
 ```
 控制台打印效果：         
